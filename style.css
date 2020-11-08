@@ -1,0 +1,72 @@
+body {
+    font-family: 'Teko', sans-serif;
+    font-size: 3vh;
+}
+
+#main-container {
+    display: grid;
+    grid-template-rows: 1fr 10fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "t t t"
+    "g g g"
+    "f s l";
+}
+
+#count-down {
+    background-color: #80B918;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t;
+}
+
+#game {
+    height: 70vh;
+    background-color: #2B9348;
+    position: relative;
+    grid-area: g;
+    display: grid;
+}
+
+#frog-count {
+    grid-area: f;
+    background-color: #007F5F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start {
+    grid-area: s;
+    background-color: #BFD200;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#level {
+    grid-area: l;
+    background-color: #007F5F;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-frog {
+    position: absolute;
+}
+
+#lose-msg {
+    align-self: center;
+    justify-self: center;
+    height: 100px;
+    width: 300px;
+    background-color: #eeef20;
+    border: 1vh solid #bfd200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
